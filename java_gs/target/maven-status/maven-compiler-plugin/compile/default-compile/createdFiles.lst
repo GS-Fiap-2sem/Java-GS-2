@@ -1,0 +1,15 @@
+com\skillbridge\model\Contrato.class
+com\skillbridge\resource\ContratoResource.class
+com\skillbridge\exception\BusinessException.class
+com\skillbridge\resource\UsuarioResource.class
+com\skillbridge\resource\VagaResource.class
+com\skillbridge\model\Vaga.class
+com\skillbridge\model\Usuario.class
+com\skillbridge\repository\ContratoRepository.class
+com\skillbridge\service\ContratoService.class
+com\skillbridge\repository\VagaRepository.class
+com\skillbridge\repository\UsuarioRepository.class
+com\skillbridge\service\UsuarioService.class
+com\skillbridge\exception\ErrorMapper.class
+META-INF\panache-archive.marker
+com\skillbridge\service\VagaService.class

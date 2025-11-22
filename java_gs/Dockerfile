@@ -1,6 +1,10 @@
 
-FROM quay.io/quarkus/quarkus-micro-image:3.0-java17
+FROM openjdk:17-jdk-slim
 
-COPY target/*-runner /work/application
+WORKDIR /app
+
+COPY target/*-runner.jar app.jar
+
 EXPOSE 8080
-CMD ["/work/application", "-Dquarkus.http.host=0.0.0.0"]
+
+ENTRYPOINT ["java","-jar","app.jar","-Dquarkus.http.host=0.0.0.0"]
