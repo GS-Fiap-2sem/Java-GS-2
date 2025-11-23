@@ -1,9 +1,3 @@
-package com.skillbridge.model;
-
-import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-
 @Entity
 @Table(name = "usuarios")
 public class Usuario {
@@ -20,8 +14,10 @@ public class Usuario {
     private String email;
 
     @NotBlank
-    private String tipo;
+    private String senha;
 
+    @NotBlank
+    private String tipo;
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -31,6 +27,9 @@ public class Usuario {
 
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
+
+    public String getSenha() { return senha; }
+    public void setSenha(String senha) { this.senha = senha; }
 
     public String getTipo() { return tipo; }
     public void setTipo(String tipo) { this.tipo = tipo; }
